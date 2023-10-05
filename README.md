@@ -2,6 +2,8 @@
 
 This is small project I've been working on.
 
+Each folder contains a standalone element of the overall 'Games' program. I did this to make it easier to test individual elements without breaking the overall games program.
+
 I'm well aware that I am most likely breaking some 'rules', as well as making my code less 'pythonic'. 
 
 This program has lots of blank space and unnessecary 'fluff' because it helps me verify it's working properly.
