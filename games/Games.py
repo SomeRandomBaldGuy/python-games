@@ -35,15 +35,15 @@ def games():
 #One function is for single die play and another for multiple. 
     def dice_roll():
         mode = input ("""
-        *******************************
-        How many dice you like to roll?
-        *******************************
+    *******************************
+    How many dice you like to roll?
+    *******************************
 
-        A. Single.
-        B. Multiple.
-        C. Return to Main Menu.
+    A. Single.
+    B. Multiple.
+    C. Return to Main Menu.
 
-        Your Selection: """)
+    Your Selection: """)
 
         def single():
             print ("The dice is being rolled...")
@@ -54,14 +54,14 @@ def games():
             print ()
             print ("The number rolled was: " + (str(dice)) + ".")
             again = input ("""
-            ******************************
-            Would you like to roll again?: 
-            ******************************
+    ******************************
+    Would you like to roll again?: 
+    ******************************
             
-            Yes
-            No
+    Yes
+    No
             
-            Your Selection: """)
+    Your Selection: """)
             if (again == "Yes" or again == "yes"):
                 dice_roll()
             elif (again == "No" or again == "no"):
@@ -74,22 +74,22 @@ def games():
             
         def multiple():
             amount = input ("""
-            **************************************
-            How many dice would you like to roll?:
-            **************************************
+    **************************************
+    How many dice would you like to roll?:
+    **************************************
             
-            Two
-            Three
-            Four
+    Two
+    Three
+    Four
             
-            Your Selection: """)
+    Your Selection: """)
             print ()
             
             if not choice.isalpha():
                print ("""
-          ******************************
-          Please make a valid selection.
-          ******************************
+    ******************************
+    Please make a valid selection.
+    ******************************
           """)
 
             elif (amount == "Two" or amount == "two"):
@@ -109,12 +109,12 @@ def games():
                 multiple()
                 
             again = input ("""
-            ******************************
-            Would you like to roll again?:
-            ******************************
+    ******************************
+    Would you like to roll again?:
+    ******************************
             
-            Yes
-            No
+    Yes
+    No
             
             Your Selection: """)
             
@@ -134,9 +134,9 @@ def games():
             games()
         else:
             print("""
-            *********************************
-            Invalid Entry. Returning to Menu.
-            *********************************
+    *********************************
+    Invalid Entry. Returning to Menu.
+    *********************************
             """)
             dice_roll()
 #############################################################################################################
@@ -144,15 +144,15 @@ def games():
 #One function acts a a single coin flip and another acts as a player vs cpu mode.
     def coin_flip():
         mode = input ("""
-        ***************************
-        What would you like to do?: 
-        ***************************
+    ***************************
+    What would you like to do?: 
+    ***************************
         
-        A. Flip a coin.
-        B. Versus.
-        C. Return to Main Menu.
+    A. Flip a coin.
+    B. Versus.
+    C. Return to Main Menu.
 
-        Your Choice: """)
+    Your Choice: """)
 
         def single():
             coin = (random.choice(["Heads", "Tails"]))
@@ -162,14 +162,14 @@ def games():
             time.sleep(1)
             print ("The side it landed on is: " + coin + ".")
             again = input ("""
-            ******************************
-            Would you like to flip again?:
-            ******************************
+    ******************************
+    Would you like to flip again?:
+    ******************************
             
-            Yes
-            No
+    Yes
+    No
                         
-            Your Selection: """)
+    Your Selection: """)
             if (again == "Yes" or again == "yes"):
                 single()
             else:
@@ -178,14 +178,14 @@ def games():
             
         def versus():
             choice  = input ("""
-            ************************
-            Please choose your side:
-            ************************
+    ************************
+    Please choose your side:
+    ************************
             
-            Heads
-            Tails
+    Heads
+    Tails
             
-            Your Choice: """)
+    Your Choice: """)
             
             coin = (random.choice(["Heads", "Tails"]))
             print ()
@@ -204,14 +204,14 @@ def games():
                 print ("A valid choice was not made. Please Try again.")
                 versus()
             again = input (""""
-            ******************************
-            Would you like to flip again?:
-            ******************************
+    ******************************
+    Would you like to flip again?:
+    ******************************
             
-            Yes 
-            No
+    Yes 
+    No
             
-            Your Selection: """)
+    Your Selection: """)
             
             if (again == "Yes" or again == "yes"):
                 versus()
@@ -235,14 +235,14 @@ def games():
     def color_picker():
 
          mode = input ("""
-     ***********************************************
-     How many colors would you like to have picked?:
-     ***********************************************
+    ***********************************************
+    How many colors would you like to have picked?:
+    ***********************************************
 
-     Single
-     Multiple
+    Single
+    Multiple
 
-     Your Selection:  """)
+    Your Selection:  """)
 
          def single():
               print ("A color is being chosen...")
@@ -251,14 +251,14 @@ def games():
               time.sleep(1)
               print ("The color that was picked is: " + color + ".")
               again = input ("""
-          *********************************************
-          Would you like to have another color picked?: 
-          *********************************************
+    *********************************************
+    Would you like to have another color picked?: 
+    *********************************************
   
-          Yes
-          No
+    Yes
+    No
              
-          Your Selection: """)
+    Your Selection: """)
              
               if (again == "Yes" or again == "yes"):
                    color_picker()
@@ -269,21 +269,21 @@ def games():
          def multiple():
               choice = input ("""
 
-     ***************************************
-     How many colors would you like to pick?
-     ***************************************
-     Two
-     Three
-     Four
+    ***************************************
+    How many colors would you like to pick?
+    ***************************************
+    Two
+    Three
+    Four
 
-     Your Selection: """)
+    Your Selection: """)
               print ()
     
               if not choice.isalpha():
                    print ("""
-          ******************************
-          Please make a valid selection.
-          ******************************
+    ******************************
+    Please make a valid selection.
+    ******************************
           """)
 
               elif (choice == "Two" or choice == "two"):
@@ -300,21 +300,21 @@ def games():
                         print ("The color chosen is: " + color + ".")
               else:
                    print ("""
-          ******************************
-          Please make a valid selection.
-          ******************************
+    ******************************
+    Please make a valid selection.
+    ******************************
           """)
                    multiple()
 
               again = input ("""
-          *************************************************
-          Would you like to have another color set picked?: 
-          *************************************************
+    *************************************************
+    Would you like to have another color set picked?: 
+    *************************************************
              
-          Yes
-          No
+    Yes
+    No
              
-          Your Selection: """)
+    Your Selection: """)
              
               if (again == "Yes" or again == "yes"):
                    color_picker()          
@@ -328,9 +328,9 @@ def games():
               multiple()
          else:
               print ("""
-          ******************************
-          Please make a valid selection.
-          ******************************
+    ******************************
+    Please make a valid selection.
+    ******************************
           """)
               color_picker()
 #############################################################################################################
@@ -339,15 +339,15 @@ def games():
     def number_picker():
 
         mode = input ("""
-        ************************
-        Please make a selection: 
-        ************************
+    ************************
+    Please make a selection: 
+    ************************
         
-        A. Single.
-        B. Versus.
-        C. Return to Main Menu.
+    A. Single.
+    B. Versus.
+    C. Return to Main Menu.
         
-        Your Selection: """)
+    Your Selection: """)
 
         def single():
             print ()
@@ -357,14 +357,14 @@ def games():
             time.sleep(1)
             print ("The number that was chosen was: "+ (str(number)) + ".")
             again = input ("""
-            **********************************************
-            Would you like to have another number chosen?: 
-            **********************************************
+    **********************************************
+    Would you like to have another number chosen?: 
+    **********************************************
             
-            Yes
-            No
+    Yes
+    No
             
-            Your Selection: """)
+    Your Selection: """)
             
             if (again == "Yes" or again == "yes"):
                 single()
@@ -375,9 +375,9 @@ def games():
         def versus ():
             print ()
             choice = input ("""
-            **************************************************************
-            Please choose your number in numeric value between 1 and 1000.
-            **************************************************************
+    **************************************************************
+    Please choose your number in numeric value between 1 and 1000.
+    **************************************************************
               
             Your Selection: """)
             
@@ -409,14 +409,14 @@ def games():
                 print ("A valid choice was not made. Please try again.")
                 versus()
             again = input ("""
-            *****************************
-            Would you like to play again?
-            *****************************
+    *****************************
+    Would you like to play again?
+    *****************************
             
-            Yes
-            No
+    Yes
+    No
             
-            Your Selection: """)
+    Your Selection: """)
             print ()
             if (again == "Yes" or again == "yes"):
                 versus()
@@ -424,9 +424,9 @@ def games():
                 number_picker()
             else:
                 print ("""
-                *********************************
-                Invalid entry. Returning to Menu.
-                *********************************
+    *********************************
+    Invalid entry. Returning to Menu.
+    *********************************
                 """)
                 number_picker()
     
@@ -444,15 +444,15 @@ def games():
         cpu = (random.choice(["Rock", "Paper", "Scissors"]))
 
         choice = input ("""
-        ***************************
-        Please make your selection:
-        ***************************
+    ***************************
+    Please make your selection:
+    ***************************
+      
+    Rock
+    Paper
+    Scissors
         
-        Rock
-        Paper
-        Scissors
-        
-        Your Selection: """)
+    Your Selection: """)
              
         if (cpu == "Rock") and (choice == "Scissors" or choice == "scissors"):
             print ("Rock beats Scissors. You Lose!")
@@ -474,20 +474,20 @@ def games():
             print ("It's a draw!. Try Again!")
         else:
             print ("""
-        ****************************
-        A valid choice was not made.
-        ****************************""")
+    ****************************
+    A valid choice was not made.
+    ****************************""")
             rock_paper_scissors()
         
         again = input ("""
-        ******************************
-        Would you like to play again?: 
-        ******************************
+    ******************************
+    Would you like to play again?: 
+    ******************************
         
-        Yes
-        No
+    Yes
+    No
         
-        Your Selection: """)
+    Your Selection: """)
         
         if (again == "Yes" or again == "yes"):
             rock_paper_scissors()
@@ -518,9 +518,9 @@ The program will now close. Good-bye.
         exit
     else:
         print ("""
-        ******************************
-        Please make a valid selection.
-        ******************************
+    ******************************
+    Please make a valid selection.
+    ******************************
         """)
         games()
 games()
